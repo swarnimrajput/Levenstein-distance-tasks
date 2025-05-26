@@ -1,87 +1,85 @@
 # Spell Checker Application
 
-A full-stack spell checker application that suggests similar words using the Levenshtein distance algorithm.
+A modern spell checker application built with React and Node.js that suggests corrections for misspelled words using the Levenshtein distance algorithm.
 
 ## Features
 
 - Real-time spell checking
-- Word suggestions based on Levenshtein distance
-- Configurable cost for insertions, deletions, and substitutions
-- Modern React frontend with Material-UI
-- Express.js backend with efficient algorithm implementation
+- Interactive word suggestions
+- Modern, responsive UI with Material-UI
+- RESTful API backend
+- Efficient word similarity calculation
 
 ## Tech Stack
 
-- Frontend:
-  - React with TypeScript
-  - Material-UI for components
+- **Frontend:**
+  - React
+  - Material-UI
   - Axios for API calls
 
-- Backend:
+- **Backend:**
   - Node.js
-  - Express.js
-  - CORS enabled
+  - Express
   - Custom Levenshtein distance implementation
 
-## Installation
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm (v6 or higher)
+
+### Installation
 
 1. Clone the repository:
-```bash
-git clone <your-repo-url>
-cd spell-checker
-```
+   ```bash
+   git clone https://github.com/yourusername/spell-checker.git
+   cd spell-checker
+   ```
 
 2. Install backend dependencies:
-```bash
-cd backend
-npm install
-```
+   ```bash
+   cd backend
+   npm install
+   ```
 
 3. Install frontend dependencies:
-```bash
-cd ../frontend
-npm install
-```
+   ```bash
+   cd ../frontend
+   npm install
+   ```
 
-## Running the Application
+### Running the Application
 
 1. Start the backend server:
-```bash
-cd backend
-npm run dev
-```
+   ```bash
+   cd backend
+   npm run dev
+   ```
+   The server will run on http://localhost:5001
 
-2. In a new terminal, start the frontend development server:
-```bash
-cd frontend
-npm start
-```
-
-The application will be available at:
-- Frontend: http://localhost:3000
-- Backend: http://localhost:5001
+2. Start the frontend development server:
+   ```bash
+   cd frontend
+   npm start
+   ```
+   The application will open in your default browser at http://localhost:3000
 
 ## API Endpoints
 
 - `POST /spellcheck`
-  - Request body: `{ "word": "string" }`
-  - Response: `{ "suggestions": ["string"] }`
-
-## Algorithm Details
-
-The spell checker uses the Levenshtein distance algorithm with configurable costs:
-- Insertion cost (Ci) = 1
-- Deletion cost (Cd) = 1
-- Substitution cost (Cs) = 1
+  - Checks spelling and returns suggestions
+  - Request body: `{ "word": "yourword" }`
+  - Response: `{ "suggestions": ["suggestion1", "suggestion2", ...] }`
 
 ## Contributing
 
 1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details. 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 

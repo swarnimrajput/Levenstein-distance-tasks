@@ -2,7 +2,7 @@ import React from 'react';
 import SpellChecker from './components/SpellChecker';
 import { CssBaseline } from '@mui/material';
 
-const App: React.FC = () => {
+function App() {
   return (
     <>
       <CssBaseline />
@@ -11,4 +11,4 @@ const App: React.FC = () => {
   );
 }
 
-export default App;
+export default App; 
